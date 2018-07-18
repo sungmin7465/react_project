@@ -1,0 +1,7 @@
+{
+	"host"			: "localhost",
+	"user"			: "root",
+	"password"	: "192837",
+	"port"			: "3306",
+	"database"	: "last_web_project"
+}
