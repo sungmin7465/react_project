@@ -31,7 +31,7 @@ export default class SideBar extends React.Component {
             <Nav vertical className="col-md-2 d-none d-md-block bg-light sidebar" >
               <div className="sidebar-sticky">
                 <NavItem>
-                  <NavLink href="/portfolio" active={window.location.pathname === '/portfolio'}><FileText size ={18}/>Portfolio</NavLink>
+                  <NavLink href="/about" active={window.location.pathname === '/about'}><FileText size ={18}/>About</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/profile" active={window.location.pathname === '/profile'}><User size ={18}/>Profile</NavLink>

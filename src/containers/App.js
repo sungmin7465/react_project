@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, Redirect} from 'react-router-dom';
-import {Home, Profile, Portfolio, ETC, HTML, CSS, Javascript, Whoops404} from './';
+import {Home, Profile, About, ETC, HTML, CSS, Javascript, Whoops404} from './';
 import PropTypes from 'prop-types';
 import {Header, SideBar} from '../components';
 import { Container, Row } from 'reactstrap';
@@ -197,7 +197,7 @@ class App extends React.Component {
                   <Route exact path="/" component={Home} />
                   <Redirect from="/home" to="/"/>
                   <Route path="/profile" component={Profile} />
-                  <Route path="/portfolio" component={Portfolio} />
+                  <Route path="/about" component={About} />
                   <Route path="/etc/:id" component={ETC} />
                   <Route path="/etc/" component={ETC} />
                   <Route path="/html" component={HTML} />

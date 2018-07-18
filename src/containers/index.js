@@ -4,9 +4,8 @@ import HTML from './HTML';
 import Javascript from './Javascript';
 import CSS from './CSS';
 import Profile from './Profile';
-import Portfolio from './Portfolio';
 import ETC from './ETC';
 import Whoops404 from './Whoops404';
+import About from './About';
 
-
-export { App, Home, Javascript, HTML, CSS, ETC, Profile, Portfolio, Whoops404 };
+export { About, App, Home, Javascript, HTML, CSS, ETC, Profile, Whoops404 };
