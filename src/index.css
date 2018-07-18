@@ -263,6 +263,10 @@ body { padding: 2em; }
   margin : auto;
 }
 
+.photo-id{
+  float: right;
+}
+
 /*body {
   height: 100%;
   width: 100%;
