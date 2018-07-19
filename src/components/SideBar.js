@@ -31,12 +31,12 @@ export default class SideBar extends React.Component {
             <Nav vertical className="col-md-2 d-none d-md-block bg-light sidebar" >
               <div className="sidebar-sticky">
                 <NavItem>
-                  <NavLink href="/about" active={window.location.pathname === '/about'}><FileText size ={18}/>About</NavLink>
+                  <NavLink href="/about" active={window.location.pathname === '/about' || window.location.pathname === '/'}><FileText size ={18}/>About</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/profile" active={window.location.pathname === '/profile'}><User size ={18}/>Profile</NavLink>
                 </NavItem>
-                <NavItem onClick={this.toggle}>
+                <NavItem onMouseLeave={this.toggle} onMouseEnter={this.toggle} onClick={this.toggle}>
                   <NavLink>CSE {!collapsed ? <IoArrowUpB/> : <IoArrowDownB/> }  </NavLink>
                   <Collapse isOpen={!collapsed}>
                     <SubSideBar/>

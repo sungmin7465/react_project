@@ -267,6 +267,11 @@ body { padding: 2em; }
   float: right;
 }
 
+.description > li{
+  margin-top: 10%;
+}
+
+
 /*body {
   height: 100%;
   width: 100%;

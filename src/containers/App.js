@@ -194,7 +194,7 @@ class App extends React.Component {
               <SideBar/>
               <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <Switch>
-                  <Route exact path="/" component={Home} />
+                  <Route exact path="/" component={About} />
                   <Redirect from="/home" to="/"/>
                   <Route path="/profile" component={Profile} />
                   <Route path="/about" component={About} />

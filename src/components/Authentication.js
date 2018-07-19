@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Form,  Input, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
+var API_URL = process.env.NODE_ENV === "production" ? "http://1.239.127.120:3001" : "http://localhost:3000";
+
 class Authentication extends React.Component {
 
   constructor(props) {
@@ -95,8 +97,8 @@ class Authentication extends React.Component {
             <button type="button"onClick={()=>window.location.href='http://localhost:3000/api/account/login/facebook'} name="facebook"  className="loginBtn loginBtn--facebook">
                   페이스북으로 로그인
                 </button>
-                <button name="google" onClick={this.handleLogin} className="loginBtn loginBtn--google">
-                  구글로 로그인
+                <button name="google" onClick={()=>alert("아직 미구현 상태입니다.")} className="loginBtn loginBtn--google">
+                  구글로 로그인 (미구현)
                 </button>
               </ModalFooter>
             </Form>
@@ -119,11 +121,11 @@ class Authentication extends React.Component {
                 <Button color="secondary" onClick={this.toggle}>취소</Button>
               </div>
 
-        <button  type="button" onClick={()=>window.location.href='http://localhost:3000/api/account/login/facebook'} name="facebook"  className="loginBtn loginBtn--facebook">
+        <button  type="button" onClick={()=>window.location.href=API_URL + '/api/account/login/facebook'} name="facebook"  className="loginBtn loginBtn--facebook">
                 페이스북으로 로그인
               </button>
-              <button name="google" onClick={this.handleLogin} className="loginBtn loginBtn--google">
-                구글로 로그인
+              <button name="google" onClick={()=>alert("아직 미구현 상태입니다.")} className="loginBtn loginBtn--google">
+                구글로 로그인 (미구현)
               </button>
             </ModalFooter>
           </Form>

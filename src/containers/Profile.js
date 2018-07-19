@@ -1,5 +1,5 @@
 import React from 'react'
-import { ListGroup, ListGroupItem, Media } from 'reactstrap';
+import { ListGroup, ListGroupItem } from 'reactstrap';
 import { Slide } from '../components';
 
 const Profile = () =>{
@@ -71,7 +71,7 @@ const Profile = () =>{
                   <li>2014.10.01&emsp;제10회 한성공학경진대회 한성대학교</li>
                   <li>2015.09.23&emsp;제11회 한성공학경진대회 한성대학교</li>
                   <li>2016.02.18&emsp;Microsoft Office Excel 2010 Expert Microsoft</li>
-                  <li>xxxx.xx.xx&emsp;KSC2017 우수발표논문상</li>
+                  <li>2018.02.06&emsp;KSC2017 우수발표논문상</li>
                 </ul>
               </ListGroupItem>
             </ListGroup>
